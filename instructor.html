@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>자기소개페이지-소민환</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="myPage.css" />
+  </head>
+  <body>
+    <style type="text/css">
+      blockquote{
+        background: #f9f9f9;
+        border-left: 10px solid #cccccc;			/* 회색 */
+        magrin: 1.5em 10px;
+        padding: 0.5em 10px;
+        quotes: "\201C""\201D""\2018""\2019";
+        font-weight: bold;
+      }  
+      /* 인용구가 처음 들어갈때, 왼쪽 부분 */
+      blockquote:before{
+        color: #cccccc;
+        content: open-quote;
+        font-size: 3em;
+        line-height: 0.3em;
+        margin-left: 0.5em;
+        vertical-align: -0.4em;
+      } 
+      /* 인용구 닫는 부분 */
+      blockquote:after{
+        color: #cccccc;
+        content: close-quote;
+        font-size: 3em;
+        line-height: 0.1em;
+        margin-left: 0.25em;
+        vertical-align: -0.4em;
+      }
+    </style>
+    <!-- 내비게이션바 시작부분 -->
+    <nav class="navbar navbar-expand-lg" style="background-color:#eeeeee ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">마이페이지</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="instructor.html">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="lecture.html?lectureName=Java">Java</a></li>
+                <li><a class="dropdown-item" href="lecture.html?lectureName=Android">Android</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="lecture.html?lectureName=Else">그 이외(Html,Css)</a>
+                </li>
+              </ul>
+          </ul> 
+          <form class="d-flex">
+              <input type="text" class="form-control me-2" placeholder="내용을 입력하세요.">
+            </div>
+            <button style="background-color:#2F3238" class="btn btn-outline-light" type="submit">검색</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                접속하기
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="loginForm.html">로그인</a></li>
+                <li><a class="dropdown-item" href="registerForm.html">회원가입</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><br>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel panel-primary" >
+            <div class="panel-heading">
+              <div class="panel-title bg-primary text-light ">&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tags-fill" viewBox="0 0 16 16">
+                  <path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  <path d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043-7.457-7.457z"/>
+                </svg>
+                <b>&nbsp;소민환</b>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="media">
+              <div class="media-left"style="float:left;">
+                <a href="#"><br>&nbsp;
+                  <img class="media-object" src="images/human.png" alt="개발자 이미지"><br><br>
+                </a>
+              </div>
+              <div class="media-body"><br>
+                <h4 class="media-heading">&nbsp;&nbsp;&nbsp;소민환</h4><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;자기소개페이지 대표 소민환입니다.
+              </div>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>강사명</th>
+                <th>강의 번호</th>
+                <th>강의 제목</th>
+                <th>강의 날짜</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>소민환</td>
+                <td>1</td>
+                <td><a href="lecture.html?lectureName=Java">자바 기초 프로그래밍 강좌</a></td>
+                <td>2023-01-20</td>
+              </tr>
+              <tr>
+                <td>소민환</td>
+                <td>2</td>
+                <td><a href="lecture.html?lectureName=Android">안드로이드 기초 프로그래밍 강좌</a></td>
+                <td>2023-01-20</td>
+              </tr>
+              <tr>
+                <td>소민환</td>
+                <td>3</td>
+                <td><a href="lecture.html?lectureName=Else">Html 기초 프로그래밍 강좌</a></td>
+                <td>2023-01-20</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="panel-footer">
+            <blockquote>&nbsp;&nbsp;Do And Forget!</blockquote>
+          </div>
+
+        </div>
+      </div> 
+    </div>
+  </div>
+
+
+  <br><!--최신 강의 목록, 자기소개 페이지 여백 조절-->
+</div>
+<footer style="background-color: #2F3238; color: #B1B3B9">
+<br/>
+<div class="container">
+<div class="row">
+  <div class="col-sm-3" style="text-align:start">
+    <p>
+    <span style="font-size:x-large">자기소개페이지-소민환</span>
+    </p>
+    <br/>
+  </div>
+<div class="footer_info">
+  <p>
+    <span>Dong-eui University.</span>
+    <span style="margin-inline:5px;">소민환 부산광역시 사하구 승학로 233번길 50 1동</span>
+    <span style="margin-left:5px;">전화: 010-4662-xxxx</span>
+    <span style="margin-left:5px;">팩스:0502-258-xxxx</span>
+    <span style="margin-left:5px;">Email : thalsghks@naver.com</span>
+    <span style="margin-left:5px;">사업자등록번호 : 220-xx-xxxxx호</span>
+    <span style>통신판매업 신고번호 : 제2013-경기성남-1659호</span>
+  </p>
+  <span class="copyright" style="font-size: small; color :#888888" >&copySMH Korea Corporation All Rights Reserved.</span>
+  <hr>
+  <p> 
+  <span class="footer_logo">
+    <a href="https://www.youtube.com" target="_blank">
+      <img src="images/youtube.png" width="32" height="32" alt="contact-youtube-icon-icon" >
+    </a>
+  </span>
+  <span style="margin-inline: 25px;">
+    <a href="https://discord.gg/GERb7eD5" target="_blank">
+      <img src="images/discord.png" width="32" height="32" alt="contact-discord-icon-icon">
+    </a>
+  </span>
+    <span style="margin-left: 10px;">
+      <a href="https://twitter.com/smh7527" target="_blank">
+        <img src="images/twitter.png" width="30" height="30" alt="contact-twitter-icon" >
+      </a>  
+  </span>
+  <span style="margin-left: 20px;">
+    <a href="https://twitter.com/smh7527" target="_blank">
+      <img src="images/facebook.png" width="50" height="50" alt="contact-twitter-icon" >
+    </a>  
+  </span>
+  <span style="margin-left: 20px;">
+    <a href="https://github.com/Sominhwan" target="_blank">
+      <img src="images/github.png" width="35" height="35" alt="contact-twitter-icon" >
+    </a>  
+  </span>
+  <br>
+</p>
+</div>
+</div>
+</div>
+</footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
