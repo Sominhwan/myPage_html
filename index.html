@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="myPage.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg" style="background-color:#eeeeee ">
+    <!-- 마이페이지 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">마이페이지</a>
         <button
@@ -28,10 +29,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>    
+            </li>      
             <li class="nav-item">
-              <a class="nav-link" href="instructor.html">Link</a>
+              <a class="nav-link" href="instructor.html">소개</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -42,14 +43,14 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                강의
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="lecture.html?lectureName=Java">Java</a></li>
-                <li><a class="dropdown-item" href="lecture.html?lectureName=Android">Android</a></li>
+                <li><a class="dropdown-item" href="javaLecture.html">Java</a></li>
+                <li><a class="dropdown-item" href="androidLecture.html">Android</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="lecture.html?lectureName=Else">그 이외(Html,Css)</a>
+                  <a class="dropdown-item" href="htmlLecture.html">그 이외(Html,Css)</a>
                 </li>
               </ul>
           </ul> 
@@ -79,6 +80,7 @@
         </div>
       </div>
     </nav><br>
+    <!-- 나의페이지 전광판-->
     <div class="container">
       <div class="jumbotron">
         <h1 class="display-4"><br>나의페이지를 소개합니다.</h1>
@@ -86,32 +88,31 @@
           소민환의 개인페이지입니다. 다양한 자기소개 및 작성글이 존재합니다.
         </p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="lecture.html" role="button">
+          <a class="btn btn-primary btn-lg" href="javaLecture.html" role="button">
             강의 들으러 가기
           </a>
           <br><br><br>
         </p>
       </div><br>
-      
+      <!-- 표 -->
       <div class="row">
         <div class="col-md-4">
           <h4>코딩 공부에 도움되는 동영상</h4>
           <p>코딩에 도움이 되는 다양한 영상들을 퉁해 공부할 수 있습니다.</p>
-          <P><a class="btn btn-outline-secondary" data-bs-target="#modal" data-bs-toggle="modal">자세히 알아보기</a></P>
+          <P><a class="btn btn-outline-dark" data-bs-target="#modal" data-bs-toggle="modal">자세히 알아보기</a></P>
         </div>
         <div class="col-md-4">
-          <h4>폭넓은 강사진</h4>
-          <p>코딩 부스터는 다른 사이트와는 차원이 다른 깔끔한 구성을 보여줍니다.</p>
-          <P><a class="btn btn-outline-secondary" href="instructor.html">자세히 알아보기</a></P>
+          <h4>프로필 소개</h4>
+          <p>나의 프로파일에 대해 간단히 소개하는 차트를 볼 수 있습니다.</p>
+          <P><a class="btn btn-outline-dark" href="instructor.html">자세히 알아보기</a></P>
         </div>
         <div class="col-md-4">
-          <h4>핵심적인 강의</h4>
-          <p>코딩 부스터는 다른 사이트와는 차원이 다른 깔끔한 구성을 보여줍니다.</p>
-          <P><a class="btn btn-outline-secondary" href="instructor.html">자세히 알아보기</a></P>
+          <h4>깔끔한 레이아웃</h4>
+          <p>본 사이트는 다른 사이트와는 차원이 다른 깔끔한 구성을 보여줍니다.</p>
         </div>
       </div>
       <hr>
-
+<!-- 최신 강의 목록 패널 -->
       <div class="panel" >
         <div class="panel-heading bg-primary text-white">
           <div class="pane d-flex align-items-center mt-0 mb-3">
@@ -122,90 +123,131 @@
           </div>
         </div>
         <div class="panel-body">
-
           <div class="pane d-flex align-items-center mt-0 ">
             <img class="media-object" src="images/java.png" alt="자바 강의 이미지">
-            <div class="m-2"><a href="lecture.html?lectureName=Java"><b>자바 언어 기초 프로그래밍 강의&nbsp;&nbsp;</b></a><span class="badge bg-success">New</span>
+            <div class="m-2"><a href="javaLecture.html"><b>자바 언어 기초 프로그래밍 강의&nbsp;&nbsp;</b></a><span class="badge bg-success">New</span>
             <br><br>
             <p class="m-0"style="color: #111111">Java 강의는 객체 지향 프로그래밍의 기본을 알려주는 강의입니다. 처음 프로그래밍을 접하는 입문자가
             듣기에 적합한 강의입니다. 강의료는 무료이며 Java 기초 프로그래밍 강좌는 총 30강으로 구성됩니다.</p></div>
           </div> <br><hr>
-
           <div class="pane d-flex align-items-center mt-0 ">
             <img class="media-object" src="images/android.png" alt="안드로이드 강의 이미지">
-            <div class="m-2"><a href="lecture.html?lectureName=Android"><b>안드로이드 기초 프로그래밍 강의&nbsp;&nbsp;</b></a><span class="badge bg-success">New</span>
+            <div class="m-2"><a href="androidLecture.html"><b>안드로이드 기초 프로그래밍 강의&nbsp;&nbsp;</b></a><span class="badge bg-success">New</span>
             <br><br>
-            <p class="m-0"style="color: #111111">Cooking</p></div>
+            <p class="m-0"style="color: #111111">안드로이드는 리눅스 커널을 기반으로 구글에서 제작하고 있는 스마트폰과 같은 플랫폼의 모바일 운영 체제와 미들웨어 및 
+              중요 애플리케이션이 포함된 소프트웨어 집합입니다. 안드로이드 관련 기초 강의를 듣고 싶다면 클릭하세요.</p></div>
           </div> <br><hr>
-
           <div class="pane d-flex align-items-center mt-0 ">
             <img class="media-object" src="images/html.png" alt="Html 강의 이미지">
-            <div class="m-2"><a href="lecture.html?lectureName=Else"><b>Html 기초 프로그래밍 강의&nbsp;&nbsp;</b></a><span class="badge bg-success">New</span>
+            <div class="m-2"><a href="htmlLecture.html"><b>Html 기초 프로그래밍 강의&nbsp;&nbsp;</b></a><span class="badge bg-success">New</span>
             <br><br>
-            <p class="m-0"style="color: #111111">Cooking</p></div>
+            <p class="m-0"style="color: #111111">웹 사이트 개발을 위해 HTML 을 배울 수 있습니다. 이외에 CSS, JSP 를 추가적으로 배울수도 있습니다.</p></div>
           </div> 
-
         </div>
         <br>
-      </div> 
-
-    </div>
-<br><!--최신 강의 목록, 자기소개 페이지 여백 조절-->
-    </div>
-    <footer style="background-color: #2F3238; color: #B1B3B9">
-  <br/>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3" style="text-align:start">
-        <p>
-        <span style="font-size:x-large">자기소개페이지-소민환</span>
-        </p>
-        <br/>
+      </div><br>
+  <!-- 카드 시작부분 -->
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        <h5 class="card-title"><b>방탈출 게임</b></h5></div>
+        <img src="images/escape.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">동의대 정보공학관을 배경으로 한 방탈출 게임입니다. 관련 정보를 얻고 싶다면 버튼을 클릭하세요. </p>
       </div>
-    <div class="footer_info">
-      <p>
-        <span>Dong-eui University.</span>
-        <span style="margin-inline:5px;">소민환 부산광역시 사하구 승학로 233번길 50 1동</span>
-        <span style="margin-left:5px;">전화: 010-4662-xxxx</span>
-        <span style="margin-left:5px;">팩스:0502-258-xxxx</span>
-        <span style="margin-left:5px;">Email : thalsghks@naver.com</span>
-        <span style="margin-left:5px;">사업자등록번호 : 220-xx-xxxxx호</span>
-        <span style>통신판매업 신고번호 : 제2013-경기성남-1659호</span>
-      </p>
-      <span class="copyright" style="font-size: small; color :#888888" >&copySMH Korea Corporation All Rights Reserved.</span>
-      <hr>
-      <p> 
-      <span class="footer_logo">
-        <a href="https://www.youtube.com" target="_blank">
-          <img src="images/youtube.png" width="32" height="32" alt="contact-youtube-icon-icon" >
-        </a>
-      </span>
-      <span style="margin-inline: 25px;">
-        <a href="https://discord.gg/GERb7eD5" target="_blank">
-          <img src="images/discord.png" width="32" height="32" alt="contact-discord-icon-icon">
-        </a>
-      </span>
-        <span style="margin-left: 10px;">
-          <a href="https://twitter.com/smh7527" target="_blank">
-            <img src="images/twitter.png" width="30" height="30" alt="contact-twitter-icon" >
-          </a>  
-      </span>
-      <span style="margin-left: 20px;">
-        <a href="https://twitter.com/smh7527" target="_blank">
-          <img src="images/facebook.png" width="50" height="50" alt="contact-twitter-icon" >
-        </a>  
-      </span>
-      <span style="margin-left: 20px;">
-        <a href="https://github.com/Sominhwan" target="_blank">
-          <img src="images/github.png" width="35" height="35" alt="contact-twitter-icon" >
-        </a>  
-      </span>
-      <br>
-    </p>
+    <div class="card-body">
+      <a href="https://github.com/Sominhwan/EscapeProject" class="btn btn-dark">알아보기</a>
     </div>
+   </div>
+   </div>
+   <div class="col-sm-4">
+    <div class="card" style="width: 18rem;">
+    <div class="card-header">
+      <h5 class="card-title"><b>두더지 게임</b></h5></div>
+      <img src="images/mole.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">두더지 잡기는 크리에이티브 엔지니어링의 1976년 아론 페처가 1976년 발명한 아케이드 리뎀션 게임입니다.</p>
+    </div>
+  <div class="card-body">
+    <a href="https://sominhwan.github.io/mole-game/" class="btn btn-dark">게임하러가기</a>
   </div>
+ </div>
+ </div>
+ <div class="col-sm-4">
+  <div class="card" style="width: 18rem;">
+  <div class="card-header">
+    <h5 class="card-title"><b>포스기</b></h5></div>
+    <img src="images/pos.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">편의점에서 사용가능한 무인 포스기 프로그램입니다. 관련 정보를 얻고 싶다면 버튼을 클릭하세요.  </p>
+  </div>
+<div class="card-body">
+  <a href="https://github.com/Sominhwan/PosProject" class="btn btn-dark">알아보기</a>
 </div>
-    </footer>
+</div>
+</div>
+   </div>
+</div><br>
+<!-- 푸터 시작부분 -->
+  <div id="footer" style>
+    <div id="wrap"><br><br><br>
+    <div class="div_inner">
+      <div class="familysite">
+        <select name="sitelist">
+            <option value="#">패밀리사이트1</option>
+            <option value="#">패밀리사이트2</option>
+            <option value="#">패밀리사이트3</option>
+        </select>
+    </div>
+      <div class="footer_info">
+        <ul>
+            <li><a href="#" target="_blank" style="color:#fff;">마이페이지</a></li>
+            <li><a href="#" target="_blank" style="color:#fff;">채용안내</a></li>
+            <li><a href="#" target="_blank" style="color:#fff;">이용약관</a></li>
+            <li><a href="#" style="color:#fff;">이용안내</a></li>   
+            <li><a href="#" target="_blank" style="color:#fff;">개인정보처리방침</a></li>
+            <li><a href="#" target="_blank" style="color:#fff;">청소년보호정책</a></li>
+            <li><a href="#" target="_blank" style="color:#fff;">운영정책</a></li>
+            <li><a href="#" target="_blank" style="color:#fff;">사이트맵</a></li>
+        </ul>
+        <p>
+          <span>Dong-eui University.</span>
+          <span style="margin-inline:5px;">소민환 부산광역시 사하구 승학로 233번길 50 1동</span>
+          <span style="margin-left:5px;">전화: 010-4662-xxxx</span>
+          <span style="margin-left:5px;">팩스:0502-258-xxxx</span>
+          <span style="margin-left:5px;">Email : thalsghks@naver.com</span>
+          <span style="margin-left:5px;">사업자등록번호 : 220-xx-xxxxx호</span>
+          <span style>통신판매업 신고번호 : 제2023-경기XX-1659호</span>
+        </p>
+        <span class="copyright">&copySMH Korea Corporation All Rights Reserved.</span>
+        <ul class="footer_logo" style="-webkit-padding-start: 0px;"><br>
+          <li>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="images/youtube.png" width="32" height="32" alt="contact-youtube-icon-icon" >
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/GERb7eD5" target="_blank">
+              <img src="images/discord.png" width="31" height="31" alt="contact-discord-icon-icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/smh7527" target="_blank">
+              <img src="images/twitter.png" width="30" height="30" alt="contact-twitter-icon" >
+            </a>  
+          </li>
+          <li>
+            <a href="https://github.com/Sominhwan" target="_blank">
+              <img src="images/github.png" width="32" height="32" alt="contact-twitter-icon" >
+            </a>  
+          </li>
+      </ul>
+    </div>
+      </div>
+      </div>
+    </div>
+   <!-- 모달 시작부분 -->
     <div class="row">
       <div class="modal" id="modal" tabindex="-1">
         <div class="modal-dialog">
@@ -222,6 +264,7 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"> 
+    </script>
   </body>
 </html>
